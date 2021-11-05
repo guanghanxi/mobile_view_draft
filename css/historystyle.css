@@ -69,13 +69,12 @@ nav a.current{
 
 header{
   background-image: url("../images/computer.jpg");
-  background-color: blue;
+  background-color: LightSteelBlue;
   background-size: 100% auto;
   background-repeat: no-repeat; 
   color: LemonChiffon;
   height: 300px;
   font-weight: bold;
-  
 }
 
 header p{
