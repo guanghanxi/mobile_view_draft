@@ -3,7 +3,7 @@ html{
 }
 
 body{
-  background-color: cornflowerblue;
+  background-color: LightSteelBlue;
   font-size: 18px;
   margin: 0;
   padding: 0;
@@ -32,14 +32,14 @@ nav li{
 }
 
 nav{
-  background-color: #ddd;
+  background-color: LightSteelBlue;
   padding: 25px 0;    
   text-align: center;   
 }
 
 nav a.current{
-  color: blue;
-  border: 2px double blue;
+  color: red;
+  border: 2px double red;
   font-style:italic;
 }
 
@@ -73,17 +73,18 @@ nav a:hover {
 header{
   background-image: url("../images/computer.jpg");
   background-color: LightSteelBlue;
-  background-size: 100% auto;
+  background-size: cover;
+  height: 300px;
   background-repeat: no-repeat; 
   color: LemonChiffon;
   height: 300px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 header p{
-  color: LemonChiffon;
+  color: Gold;
   font-size: 24px;
-  padding: 0 100px;
+  padding: 10px 40px;
   text-align: center;
 }
 
@@ -95,6 +96,8 @@ header p{
 
 img{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .title {
@@ -183,9 +186,10 @@ img{
 
 .text-block{
   background-color: rgba(255, 255, 255, .8);
-  border: 10px solid black;
+  border: 5px solid black;
   padding: 30px;
   place-self: center;
+  border-radius: 15px;
 }
 
 @media screen and (min-width: 640px){
