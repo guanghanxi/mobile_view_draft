@@ -40,8 +40,8 @@ nav{
 }
 
 nav a.current{
-  color: red;
-  border: 2px double red;
+  color: darkred;
+  border: 2px double darkred;
   font-style:italic;
 }
 
@@ -74,7 +74,7 @@ nav a:hover {
 
 header{
   background-image: url("../images/computer.jpg");
-  background-color: LightSteelBlue;
+  background-color: darkblue;
   background-size: cover;
   height: 300px;
   background-repeat: no-repeat; 
