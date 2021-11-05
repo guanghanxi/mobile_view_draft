@@ -63,7 +63,7 @@ nav a.current{
 
 .container{
   display: grid;
-  grid-template-columns: 1fr 12fr 1fr;
+  grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
   grid-template-rows: repeat(9, auto);
 }
 
@@ -113,7 +113,7 @@ img{
 }
 
 .origin{
-  grid-column: 2 / span 1;
+  grid-column: 2 / span 2;
   grid-row: 2 / span 1;
 }
 
@@ -122,12 +122,12 @@ img{
 }
 
 .machine{
-  grid-column: 2 / span 1;
+  grid-column: 3 / span 2;
   grid-row: 3 / span 1;
 }
 
 .em {
-  grid-column: 2 / span 1;
+  grid-column: 2 / span 2;
   grid-row: 5 / span 1;
 }
 
@@ -136,7 +136,7 @@ img{
 }
 
 .vt {
-  grid-column: 2 / span 1;
+  grid-column: 3 / span 2;
   grid-row: 4 / span 1;
 }
 
@@ -149,22 +149,22 @@ img{
 }
 
 .ic {
-  grid-column: 2 / span 1;
+  grid-column: 2 / span 2;
   grid-row: 7 / span 1;
 }
 
 .super {
-  grid-column: 2 / span 1;
+  grid-column: 3 / span 2;
   grid-row: 8 / span 1;
 }
 
 .future {
-  grid-column: 2 / span 1;
+  grid-column: 2 / span 2;
   grid-row: 9 / span 1;
 }
 
 .transistor {
-  grid-column: 2 / span 1;
+  grid-column: 3 / span 2;
   grid-row: 6 / span 1;
 }
 
@@ -183,9 +183,10 @@ img{
 .text-block{
   background-color: rgba(255, 255, 255, .8);
   border: 5px solid black;
-  padding: 30px;
-  place-self: center;
   border-radius: 15px;
+  padding: 20px;
+  place-self: center;
+  margin: 10px 0;
 }
 
 @media screen and (min-width: 800px){

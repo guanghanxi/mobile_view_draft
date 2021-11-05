@@ -66,7 +66,7 @@ nav a:hover {
 
 .container{
   display: grid;
-  grid-template-columns: 1fr 12fr 1fr;
+  grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
   grid-template-rows: repeat(11, auto);
 }
 
@@ -152,12 +152,12 @@ img{
 
 .ic {
   grid-row: 2 / span 1;
-  grid-column: 2 / span 1; 
+  grid-column: 2 / span 2; 
 }
 
 .icsecond {
   grid-row: 3 / span 1;
-  grid-column: 2 / span 1; 
+  grid-column: 3 / span 2; 
 }
 
 .moore {
@@ -167,7 +167,7 @@ img{
 
 .transistor {
   grid-row: 6 / span 1;
-  grid-column: 2 / span 1; 
+  grid-column: 2 / span 2; 
 }
 
 .new {
@@ -177,22 +177,22 @@ img{
 
 .bio {
   grid-row: 8 / span 1;
-  grid-column: 2 / span 1; 
+  grid-column: 2 / span 2; 
 }
 
 .optical {
   grid-row: 9 / span 1;
-  grid-column: 2 / span 1; 
+  grid-column: 3 / span 2; 
 }
 
 .quantum {
   grid-row: 10 / span 1;
-  grid-column: 2 / span 1; 
+  grid-column: 2 / span 2; 
 }
 
 .quantumsecond{
   grid-row: 11 / span 1;
-  grid-column: 2 / span 1; 
+  grid-column: 3 / span 2; 
 }
 
 
@@ -200,8 +200,9 @@ img{
   background-color: rgba(255, 255, 255, .8);
   border: 5px solid black;
   border-radius: 15px;
-  padding: 30px;
+  padding: 20px;
   place-self: center;
+  margin: 10px 0;
 }
 
 @media screen and (min-width: 640px){

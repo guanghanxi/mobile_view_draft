@@ -66,7 +66,7 @@ nav a:hover {
 
 .container{
   display: grid;
-  grid-template-columns: 1fr 12fr 1fr;
+  grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
   grid-template-rows: repeat(9, auto);
 }
 
@@ -146,50 +146,51 @@ img{
 
 .ibm {
   grid-row: 2 / span 1;
-  grid-column: 2 / span 1; 
+  grid-column: 2 / span 2; 
 }
 
 .ibmsecond {
   grid-row: 3 / span 1;
-  grid-column: 2 / span 1; 
+  grid-column: 3 / span 2; 
 }
 
 .apple {
   grid-row: 4 / span 1;
-  grid-column: 2 / span 1; 
+  grid-column: 2 / span 2; 
 }
 
 .lenovo {
   grid-row: 5 / span 1;
-  grid-column: 2 / span 1; 
+  grid-column: 3 / span 2; 
 }
 
 .hp {
   grid-row: 6 / span 1;
-  grid-column: 2 / span 1; 
+  grid-column: 2 / span 2; 
 }
 
 .dell {
   grid-row: 7 / span 1;
-  grid-column: 2 / span 1; 
+  grid-column: 3 / span 2; 
 }
 
 .microsoft {
   grid-row: 8 / span 1;
-  grid-column: 2 / span 1; 
+  grid-column: 2 / span 2; 
 }
 
 .surface {
   grid-row: 9 / span 1;
-  grid-column: 2 / span 1; 
+  grid-column: 3 / span 2; 
 }
 
 .text-block{
   background-color: rgba(255, 255, 255, .8);
   border: 5px solid black;
-  padding: 30px;
-  place-self: center;
   border-radius: 15px;
+  padding: 20px;
+  place-self: center;
+  margin: 10px 0;
 }
 
 @media screen and (min-width: 640px){
