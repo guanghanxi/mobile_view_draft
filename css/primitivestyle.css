@@ -1,0 +1,252 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: cornflowerblue;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+nav ul{
+  list-style-type: none;
+  line-height: 30px;
+}
+
+nav li{
+  display: block;
+  padding-right: 20px;
+}
+
+nav{
+  background-color: #ddd;
+  padding: 25px 0;    
+  text-align: center;   
+}
+
+nav a.current{
+  color: blue;
+  border: 2px double blue;
+  font-style:italic;
+}
+
+header p{
+  color: white;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+*:focus {
+  border: 2px solid;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 12fr 1fr;
+  grid-template-rows: repeat(14, auto);
+}
+
+header{
+  background-image: url("../images/mechanical/mechanical.png");
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center; /* Parallax effect */
+  background-size: cover; /* Parallax effect */
+  background-repeat: no-repeat; 
+  color: white;
+  height: 400px; /* Parallax effect */
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+}
+
+
+.am-image, .ce-image, .pc-image, .ae-image, .z1-image, .tdc-image, .curta-image, .tt-image {
+  grid-column: 1 / -1;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+img{
+  width: 100%;
+}
+
+.am-image{
+  grid-row: 3 / span 1;
+}
+
+.ce-image{
+  grid-row: 4 / span 1;
+}
+
+.pc-image{
+  grid-row: 6 / span 1;
+}
+
+.ae-image{
+  grid-row: 7 / span 1;
+}
+
+.z1-image{
+  grid-row: 8 / span 1;
+}
+
+.tdc-image{
+  grid-row: 10 / span 1;
+}
+
+.curta-image{
+  grid-row: 12 / span 1;
+}
+
+.tt-image{
+  grid-row: 13 / span 1;
+}
+
+
+.intro{
+  grid-column: 1 / -1;
+  grid-row: 2 / span 1;
+}
+
+.am{
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.ce{
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+}
+
+.universe{
+  grid-column: 1 / -1;
+  grid-row: 5 / span 1;
+}
+
+.pc{
+  grid-column: 2 / span 1;
+  grid-row: 6 / span 1;
+}
+
+.ae{
+  grid-column: 2 / span 1;
+  grid-row: 7 / span 1;
+}
+
+.z1{
+  grid-column: 2 / span 1;
+  grid-row: 8 / span 1;
+}
+
+.emc{
+  grid-column: 1 / -1;
+  grid-row: 9 / span 1;
+}
+
+.tdc{
+  grid-column: 2 / span 1;
+  grid-row: 10 / span 1;
+}
+
+.mmc{
+  grid-column: 1 / -1;
+  grid-row: 11 / span 1;
+}
+
+.curta{
+  grid-column: 2 / span 1;
+  grid-row: 12 / span 1;
+}
+
+.tt{
+  grid-column: 2 / span 1;
+  grid-row: 13 / span 1;
+}
+
+.text-block{
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+  place-self: center;
+}
+
+@media screen and (min-width: 640px){  
+  img{
+    height: auto;
+    width: 100%;
+  }
+
+  nav{
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  nav li {
+    display: inline;
+  }
+
+  .container{
+    grid-template-columns: 1fr 15fr 1fr 18fr 1fr;
+    grid-template-rows: repeat(13, 400px);
+    grid-gap: 5px;
+  }
+
+  .am-image, .ce-image, .pc-image, .ae-image, .z1-image, .tdc-image, .curta-image, .tt-image {
+    grid-column: 4 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .am, .ce, .pc, .ae, .z1, .tdc, .curta, .tt {
+    grid-column: 2 / span 1;
+  }
+
+  .intro, .universe, .emc, .mmc {
+    grid-column: 2/ span 3;
+  }
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  /*Turn off scroll*/
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  /*Turn off parallax*/
+  header{
+    background-attachment: initial;
+  }
+}
+

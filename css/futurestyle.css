@@ -1,0 +1,245 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: cornflowerblue;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+nav ul{
+  list-style-type: none;
+  line-height: 30px;
+}
+
+nav li{
+  display: block;
+  padding-right: 20px;
+}
+
+nav{
+  background-color: #ddd;
+  padding: 25px 0;    
+  text-align: center;   
+}
+
+nav a.current{
+  color: blue;
+  border: 2px double blue;
+  font-style:italic;
+}
+
+header p{
+  color: white;
+  font-size: 24px;
+  padding: 0 50px;
+  text-align: center;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+*:focus {
+  border: 2px solid;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 12fr 1fr;
+  grid-template-rows: repeat(11, auto);
+}
+
+header{
+  background-image: url("../images/future/future-head.jpg");
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center; /* Parallax effect */
+  background-size: cover; /* Parallax effect */
+  background-repeat: no-repeat; 
+  color: white;
+  height: 400px; /* Parallax effect */
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+}
+
+.ic-image, .icsecond-image, .moore-image, .transistor-image, .bio-image, .optical-image, .quantum-image, .quantumsecond-image{
+  grid-column: 1 / -1;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+img{
+  width: 100%;
+}
+
+.ic-image{
+  grid-row: 2 / span 1;
+}
+
+.icsecond-image {
+  grid-row: 3 / span 1;
+}
+
+.moore-image{
+  grid-row: 5 / span 1;
+}
+
+.transistor-image{
+  grid-row: 6 / span 1;
+}
+
+.bio-image{
+  grid-row: 8 / span 1;
+}
+
+.optical-image{
+  grid-row: 9 / span 1;
+}
+
+.quantum-image{
+  grid-row: 10 / span 1;
+}
+
+.quantumsecond-image{
+  grid-row: 11 / span 1;
+}
+
+.ic {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1; 
+}
+
+.icsecond {
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1; 
+}
+
+.moore {
+  grid-row: 4 / span 1;
+  grid-column: 1 / -1; 
+}
+
+.transistor {
+  grid-row: 6 / span 1;
+  grid-column: 2 / span 1; 
+}
+
+.new {
+  grid-row: 7 / span 1;
+  grid-column: 1 / -1; 
+}
+
+.bio {
+  grid-row: 8 / span 1;
+  grid-column: 2 / span 1; 
+}
+
+.optical {
+  grid-row: 9 / span 1;
+  grid-column: 2 / span 1; 
+}
+
+.quantum {
+  grid-row: 10 / span 1;
+  grid-column: 2 / span 1; 
+}
+
+.quantumsecond{
+  grid-row: 11 / span 1;
+  grid-column: 2 / span 1; 
+}
+
+
+.text-block{
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px solid black;
+  border-radius: 15px;
+  padding: 30px;
+  place-self: center;
+}
+
+@media screen and (min-width: 640px){
+  nav li{
+    display: inline;
+  }
+
+  .container{
+    grid-template-columns: 1fr 15fr 1fr 18fr 1fr;
+    grid-template-rows: repeat(9, 400px);
+    grid-gap: 5px;
+  }
+
+  .ic-image, .icsecond-image,  .transistor-image, .bio-image, .optical-image, .quantum-image, .quantumsecond-image{
+    grid-column: 4 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .moore-image {
+    grid-column: 2 / span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img{
+    height: auto;
+    width: 100%;
+    
+  }
+
+  .moore-image img{
+    height: 100%;
+    width: auto;
+  }
+
+  .ic, .icsecond, .transistor, .bio, .optical, .quantum, .quantumsecond{
+    grid-column: 2 / span 1;
+  }
+  
+  .moore {
+    grid-column: 2 / span 3;
+  }
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  /*Turn off scroll*/
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  /*Turn off parallax*/
+  header{
+    background-attachment: initial;
+  }
+}
+
