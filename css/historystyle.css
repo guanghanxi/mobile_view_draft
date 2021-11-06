@@ -51,7 +51,7 @@ nav a{
   text-decoration: none;
 }
 
-nav a:hover {
+a:hover {
   text-decoration: underline;
 }
 
@@ -219,14 +219,5 @@ img{
 }
 
 @media screen and (prefers-reduced-motion: reduce){
-  /*Turn off scroll*/
-  html{
-      scroll-behavior: auto; /* Removes scroll animation */
-  }
-
-  /*Turn off parallax*/
-  header{
-    background-attachment: initial;
-  }
 }
 
